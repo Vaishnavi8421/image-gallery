@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MAIN CONTAINER -->
+
+    <main class="container">
+
+        <!-- Header -->
+
+        <header class="gallery-header">
+
+            <h1>Image Gallery</h1>
+
+            <p>Beautiful moments, captured in frames.</p>
+
+        </header>
+
+        <!-- ================= FILTER BUTTONS ================= -->
+
+        <section class="filter-container">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="nature">
+                Nature
+            </button>
+
+            <button class="filter-btn" data-filter="animals">
+                Animals
+            </button>
+
+            <button class="filter-btn" data-filter="cities">
+                Cities
+            </button>
+
+            <button class="filter-btn" data-filter="architecture">
+                Architecture
+            </button>
+
+            <button class="filter-btn" data-filter="travel">
+                Travel
+            </button>
+
+        </section>
+
+        <!-- ================= GALLERY ================= -->
+
+        <section class="gallery">
+
+            <!-- Nature -->
+
+            <div class="gallery-item nature">
+
+                <img src="images/lake.jpg"
+                    alt="Mountain Lake"
+                    loading="lazy">
+
+                <div class="overlay">
+
+                    <h3>Mountain Lake</h3>
+
+                    <p>Nature</p>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item animals">
+
+                <img src="images/golden.jpg"
+                    alt="Golden Retriever"
+                    loading="lazy">
+
+                <div class="overlay">
+
+                    <h3>Golden Retriever</h3>
+
+                    <p>Animals</p>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item cities">
+
+                <img src="images/newyork.jpg"
+                    alt="New York Skyline"
+                    loading="lazy">
+
+                <div class="overlay">
+
+                    <h3>New York Skyline</h3>
+
+                    <p>Cities</p>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item architecture">
+
+                <img src="images/building.jpg"
+                    alt="Modern Building"
+                    loading="lazy">
+
+                <div class="overlay">
+
+                    <h3>Modern Architecture</h3>
+
+                    <p>Architecture</p>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item nature">
+
+                <img src="images/waterfall.jpg"
+                    alt="Waterfall"
+                    loading="lazy">
+
+                <div class="overlay">
+
+                    <h3>Waterfall</h3>
+
+                    <p>Nature</p>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item animals">
+
+                <img src="images/kitten.jpg"
+                    alt="Cute Kitten"
+                    loading="lazy">
+
+                <div class="overlay">
+
+                    <h3>Cute Kitten</h3>
+
+                    <p>Animals</p>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item travel">
+
+                <img src="images/resort.jpg"
+                    alt="Beach Resort"
+                    loading="lazy">
+
+                <div class="overlay">
+
+                    <h3>Beach Resort</h3>
+
+                    <p>Travel</p>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item nature">
+
+                <img src="images/montain view.jpg"
+                    alt="Mountain View"
+                    loading="lazy">
+
+                <div class="overlay">
+
+                    <h3>Mountain View</h3>
+
+                    <p>Nature</p>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item cities">
+
+                <img src="images/europe.jpg"
+                    alt="European Street"
+                    loading="lazy">
+
+                <div class="overlay">
+
+                    <h3>European Street</h3>
+
+                    <p>Cities</p>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item nature">
+
+                <img src="images/forest path.jpg"
+                    alt="Forest Path"
+                    loading="lazy">
+
+                <div class="overlay">
+
+                    <h3>Forest Path</h3>
+
+                    <p>Nature</p>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item nature">
+
+                <img src="images/pink flowers.jpg"
+                    alt="Pink Flower"
+                    loading="lazy">
+
+                <div class="overlay">
+
+                    <h3>Pink Flower</h3>
+
+                    <p>Nature</p>
+
+                </div>
+
+            </div>
+
+            <div class="gallery-item travel">
+
+                <img src="images/santorini.jpg"
+                    alt="Santorini"
+                    loading="lazy">
+
+                <div class="overlay">
+
+                    <h3>Santorini</h3>
+
+                    <p>Travel</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= LIGHTBOX ================= -->
+
+    <div class="lightbox">
+
+        <button class="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <button class="nav-btn prev">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="lightbox-content">
+
+            <img
+                src=""
+                alt=""
+                id="lightboxImage">
+
+            <h2 id="imageTitle"></h2>
+
+            <p id="imageCategory"></p>
+
+            <span id="imageCounter">
+                1 / 12
+            </span>
+
+        </div>
+
+        <button class="nav-btn next">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
