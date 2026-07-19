@@ -20,7 +20,7 @@ A modern and responsive image gallery built with HTML, CSS, and JavaScript. The 
 
 ## 📸 Preview
 
-![Image Gallery](screenshot.png)
+![Image Gallery](images/screenshot.png)
 
 ## 📂 Project Structure
 
