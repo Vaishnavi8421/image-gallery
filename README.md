@@ -41,6 +41,3 @@ image-gallery/
 - Image Upload Support
 - Favorites Collection
 
-## 📸 Preview
-
-![Image Gallery](screenshot.png)git
