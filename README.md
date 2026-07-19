@@ -40,3 +40,7 @@ image-gallery/
 - Dark Mode
 - Image Upload Support
 - Favorites Collection
+
+## 📸 Preview
+
+![Image Gallery](screenshot.png)git
